@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRM Hospital | Patient Information</title>
+
+    <!-- Web Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/line-icons-pro/styles.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Include your additional CSS files if any -->
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header-v1">
+            <!-- Topbar -->
+            <div class="topbar-v1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-inline top-v1-contacts">
+                                <li>
+                                    <i class="fa fa-envelope"></i> Email: SRMhospital@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i> Contact no : 88666 00555
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Topbar -->
+
+            <!-- Navbar -->
+            <div class="navbar mega-menu" role="navigation">
+                <div class="container">
+                    <div class="res-container">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-responsive-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <div class="navbar-brand">
+                            <a href="index.html">
+                                <img src="assets/img/logo/.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse navbar-responsive-collapse">
+                        <div class="res-container">
+                            <ul class="nav navbar-nav">
+                                <!-- Add your navigation links here -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Navbar -->
+        </div>
+        <!-- End Header -->
+
+        <!--=== Heading ===-->
+        <div class="container content">
+            <div class="row " style="margin-bottom: 30px;">
+                <div class="col-md-9 " style="margin-bottom: 30px;">
+                    <div class="headline">
+                        <h2>Patient Information Form</h2>
+                    </div>
+
+                    <!--=== PATIENT INFORMATION FORM ===-->
+                    <form onsubmit="showMsg(0);return false;" method="post"
+                        class="sky-form sky-changes-3">
+                        <fieldset>
+                            <div class="row">
+                                <!-- Age -->
+                                <section class="col col-6">
+                                    <label class="label">Age</label>
+                                    <label class="input">
+                                        <i class="icon-append fa fa-birthday-cake"></i>
+                                        <input type="number" name="age" id="age" required="">
+                                    </label>
+                                </section>
+
+                                <!-- Sex -->
+                                <section class="col col-6">
+                                    <label class="label">Sex</label>
+                                    <label class="select">
+                                        <select name="sex" required="">
+                                            <option value="" selected="" disabled="">Select Sex</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                        <i></i>
+                                    </label>
+                                </section>
+                            </div>
+
+                            <!-- Hospital ID -->
+                            <section>
+                                <label class="label">Hospital ID</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-hospital-o"></i>
+                                    <input type="text" name="hospitalId" required="">
+                                </label>
+                            </section>
+
+                            <!-- Pregnancy -->
+                            <section>
+                                <label class="label">Pregnancy</label>
+                                <label class="select">
+                                    <select name="pregnancy" required="">
+                                        <option value="" selected="" disabled="">Select Pregnancy Status</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                    <i></i>
+                                </label>
+                            </section>
+
+                            <!-- Cardiac -->
+                            <section>
+                                <label class="label">Cardiac</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-heartbeat"></i>
+                                    <input type="text" name="cardiac">
+                                </label>
+                            </section>
+
+                            <!-- Pulmo -->
+                            <section>
+                                <label class="label">Pulmo (COPD/Asthma)</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-lungs"></i>
+                                    <input type="text" name="pulmo">
+                                </label>
+                            </section>
+
+                            <!-- Renal -->
+                            <section>
+                                <label class="label">Renal</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-kidneys"></i>
+                                    <input type="text" name="renal">
+                                </label>
+                            </section>
+
+                            <!-- Drugs -->
+                            <section>
+                                <label class="label">Drugs</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-medkit"></i>
+                                    <input type="text" name="drugs" required="">
+                                </label>
+                            </section>
+
+                            <!-- Antihypertensive Medication -->
+                            <section>
+                                <label class="label">Antihypertensive Medication</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-heart"></i>
+                                    <input type="text" name="antihypertensive" required="">
+                                </label>
+                            </section>
+
+                            <!-- Diabetic -->
+                            <section>
+                                <label class="label">Diabetic</label>
+                                <label class="select">
+                                    <select name="diabetic" required="">
+                                        <option value="" selected="" disabled="">Select Diabetic Status</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                    <i></i>
+                                </label>
+                            </section>
+
+                            <!-- Smoking -->
+                            <section>
+                                <label class="label">Smoking</label>
+                                <label class="select">
+                                    <select name="smoking" required="">
+                                        <option value="" selected="" disabled="">Select Smoking Status</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                    <i></i>
+                                </label>
+                            </section>
+
+                            <!-- Malignancy -->
+                            <section>
+                                <label class="label">Malignancy</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-exclamation-triangle"></i>
+                                    <input type="text" name="malignancy">
+                                </label>
+                            </section>
+
+                            <!-- Investigation -->
+                            <section>
+                                <label class="label">Investigation</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-flask"></i>
+                                    <input type="text" name="investigation">
+                                </label>
+                            </section>
+
+                            <!-- Hyperthyroid -->
+                            <section>
+                                <label class="label">Hyperthyroid</label>
+                                <label class="select">
+                                    <select name="hyperthyroid" required="">
+                                        <option value="" selected="" disabled="">Select Hyperthyroid Status</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                    <i></i>
+                                </label>
+                            </section>
+
+                            <!-- Liver Disease -->
+                            <section>
+                                <label class="label">Liver Disease</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-flask"></i>
+                                    <input type="text" name="liverDisease">
+                                </label>
+                            </section>
+
+                            <div class="alert alert-success successBox">
+                                <button type="button" class="close" onclick="showMsg(1);">×</button>
+                                <strong style="font-size: 16px;">Congratulations!</strong>
+                                <span class="alert-link"> Your information has been submitted successfully.</span>
+                            </div>
+                        </fieldset>
+
+                        <footer>
+                            <button type="submit" class="btn-u">Submit</button>
+                        </footer>
+                    </form>
+                </div><!--/col-md-9-->
+
+                <!-- side part of the form -->
+                <div class="col-md-3" style="margin-top: 56px;">
+                    <!-- Additional Notes or Information (if needed) -->
+                </div><!--/col-md-3-->
+            </div><!--/row-->
+        </div><!--/container-->
+
+        <!-- Footer -->
+        <div class="footer-v1">
+            <!-- Include your footer content here -->
+        </div>
+        <!-- End Footer -->
+    </div><!--/wrapper-->
+
+    <!-- JavaScript files -->
+    <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Include your additional JavaScript files if any -->
+
+    <script type="text/javascript">
+        function showMsg(flag) {
+            if (flag == 0) {
+                $('.successBox').css('display', 'block');
+            } else {
+                $('.successBox').css('display', 'none');
+            }
+        }
+    </script>
+</body>
+
+</html>
